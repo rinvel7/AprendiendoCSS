@@ -1,0 +1,70 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    /*padding-top: 50px; Esto permite q el header no tape el contenido*/
+}
+
+h2 {
+    color: crimson;
+}
+
+.header {
+    background-color: rgb(97, 202, 228); /*para q el header no tape contenido, aplicar un padding-top al body*/
+    width: 100%;
+    height: 50px;
+} 
+
+/*.fixed-top {    /Lo mas recomendable para una cabecera es usar la posicion sticky
+    position: fixed;
+    top: 0;
+}*/
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.hero-image {
+    background-color: rgb(201, 182, 133);
+    width: 100%;
+    height: 100vh;
+}
+
+.slide{
+    background-color: bisque;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide:nth-child(odd) {
+    background-color: cadetblue;
+}
+
+.slide-title {
+    background-color: beige;
+    padding: 16px;
+    text-align:center;
+    position: sticky;
+    top: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal-window {
+    background-color:black;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    display:none; /*cierra la ventana*/
+}
+
+.modal-window:target {
+    display: block; /*abre la ventana*/
+}

@@ -1,0 +1,59 @@
+html { /*reseteo*/
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;/*transicion del desplazamiento*/
+  }
+  
+  *, /*reseteo*/
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  body, /*sin margen*/
+  h1,
+  h2 {
+    margin: 0;
+  }
+  
+  img { /*dimenciones de la imagen*/
+    max-width: 50%;
+    height: auto;
+  }
+  
+  [id] {/*permite que al pasar a cada seccion pueda verse el titulo, cuando position sticky este presente */
+    scroll-margin-top: 7.8ex;
+  }
+  
+  /*nav*/
+.header { 
+    position: sticky;
+    top: 0;
+    padding: 0.25rem;
+    text-align: center;
+    background-color: #000; /*bara*/
+    color: #fff;/*letras*/
+  }
+  
+  .header a {/*cada seccion en el nav*/
+    margin: 0 1rem;
+    color: #00c4d6;
+  }
+  
+  .header a:hover {/*cambio de color al clicar la palabra seccion*/
+    color: #e94bb4;
+  }
+  
+  .slide { /*fomrato para las seccion en general*/
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #d9e8f0;
+    background-color: #1e2345;
+  }
+  
+  .slide:nth-child(even) { /*especificando cada seccion (even = color a cada caja impar)*/
+    background-color: #108eb4;
+  }
+  

@@ -1,0 +1,299 @@
+/* Asi es un comentario en CSS
+/*Documentacion🔵 Enlaces de la documentación de CSS:
+  - https://es.wikipedia.org/wiki/Hoja_de...
+  - https://www.w3.org/html/logo/
+  - https://www.w3.org/standards/webdesig...
+  - https://www.w3.org/TR/css-2020/
+  - https://developer.mozilla.org/es/docs...
+🔵 CSS Reference - https://cssreference.io/
+🔵 Can I Use - https://caniuse.com/
+🔵 Code Guide - https://codeguide.co/
+🔵 Pseudoclases - https://developer.mozilla.org/es/docs...
+🔵 Pseudoelementos - https://developer.mozilla.org/es/docs...
+🔵 Propiedades hederables - https://web.dev/learn/css/inheritance...
+🔵 Reset CSS - https://meyerweb.com/eric/tools/css/r...
+🔵 Normalize CSS - https://necolas.github.io/normalize.css/
+🔵 Autoprefixer CSS - https://autoprefixer.github.io/
+🔵 Modelo de Caja - https://developer.mozilla.org/es/docs...
+🔵 Tamaño de Caja Paul Irish - https://www.paulirish.com/2012/box-si...
+🔵 960 Grid System - https://960.gs/
+
+Regla CSS
+1) El selector: Etiquetas> elementos Html- Identificadorres> atributo html id - #. Clases> atributo - class *
+2) Bloque de declaraciones: Cada uno de los atributos que se van a modificar.
+    Sintaxis:{
+        atributo: valor;
+        atributo-mas-dos-palabras: otro-valor;
+    }
+
+Declaracion
+
+/*Selector Universal*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    border-color: chartreuse;
+    border-style: solid;
+    text-align: center;
+    color: chartreuse;
+    background-color: rgb(8, 8, 8);
+}
+
+/*Selector Etiqueta*/
+p {
+    color:black;
+} 
+
+/*Selector de idenficacion*/
+#parrafo-dos {
+    background-color: aquamarine;
+
+}
+
+/*Selector de Class*/ 
+
+.bg-skyblue {
+  background-color:cadetblue;
+}
+
+.bg-steelblue {
+    background-color: cornflowerblue;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+.text-white {
+    color: aliceblue;
+}
+
+/*Selectores Avanzados
+selectores Hijos*/
+
+.hijos-directos>li {
+    background-color: darksalmon;
+}
+
+.hijos-descendientes b {
+    background-color: darksalmon;
+}
+/*Selectores Hermanos
+
+Selectores Hermanos en general
+Los selectores de hermanos can aplicar a los elementos que son
+ hermanos y que esten por debajo del elemento de referencia*/
+
+ .hermanos-general ~ li {
+    background-color: darksalmon;
+}
+
+/*Selectores Hermano adyacentes*/
+
+.hermanos-adyacente + li {
+    background-color: darksalmon;
+}
+
+/*Selectores de Atributos*/
+.selectores-atributos a[href] {
+    color: darkblue;
+}
+
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+ 
+/*El comodin del * aplica el estilo si contiene la palabra en cuestion en cualquier parte*/
+.selectores-atributos a[href*="jonmircha"] {
+    font-size: 24px;
+}
+
+/*El comodin del $ aplica el estilo si contiene la palabra en cuestion al final */
+.selectores-atributos a[href$=".com/"] {
+    background-color: darkcyan; 
+ }
+
+ /*El comodin del ~ aplica el estilo si contiene la palabra en cuestion al final */
+.selectores-atributos a[class~="cursos"] {
+    background-color: rosybrown; 
+ }
+
+ /*Selector Universal*/
+.selector-univeral * {
+    font-size: 24px;
+}
+/*Selectores Pseudoclases*/
+.form-pseudoclases *:required {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: rgb(9, 70, 14);
+}
+
+.form-pseudoclases *:invalid {
+    border-color: rgb(230, 14, 14);
+}
+
+.form-pseudoclases *:focus {
+   background-color: rgb(140, 236, 236);
+}
+
+.form-pseudoclases *:disabled {
+    background-color: rgb(241, 172, 230);
+ }
+
+.menu-pseudoclases a:hover {
+    color:gold
+}
+
+.p-pseudoclases:hover {
+    font-size: 20px;
+
+}
+
+#inicio:target {
+    background-color: rgb(236, 236, 172);
+}
+
+/*Estilo por posicion*/
+/*first-child modifica el primer elemento de la lista*/
+.lista-Pseudoclases li:first-child {
+    color: rgb(89, 155, 23);
+}
+/*lasst-child modifica el ultimo elemento de la lista*/
+.lista-Pseudoclases li:last-child {
+    color: rgb(219, 54, 150);
+}
+/*nth-child(4) modifica el elemento senalado entre () de la lista*/
+.lista-Pseudoclases li:nth-child(4) {
+    color: rgb(226, 206, 24);
+}
+/*nth-child(4n) modifica de 4 en 4 el elemento de la lista*/
+.lista-Pseudoclases li:nth-child(4n) {
+    font-size: 20px;
+}
+/*nth-child(3n + 1) modifica el elemento sumando 1 posicion mas de la lista*/
+.lista-Pseudoclases li:nth-child(3n + 1) {
+    font-weight: bold;
+}
+/*nth-child(even=par) modifica los elementos de la lista que son pares*/
+.lista-Pseudoclases li:nth-child(even) {
+   background-color: rgb(235, 8, 243);
+}
+/*nth-child(odd=impar) modifica los elementos de la lista que son impares*/
+.lista-Pseudoclases li:nth-child(odd) {
+    background-color: rgb(240, 123, 240);
+ }
+
+/*Of-type modifica los elementos segun el tipo de etiqueta senalada (ej: aplicara a todas las "p" */ 
+ .articulo-pseudoclases p:first-of-type {
+     background-color: yellow;
+ }
+
+ .articulo-pseudoclases p:last-of-type {
+    background-color: rgb(238, 185, 12);
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+    background-color: rgb(255, 102, 0);
+}
+/* El * aplicara  el estilo forma universal a exepcion la etiqueta que 
+este senalada por la palabra not*. Si es necesario colocar mas etiqueta se debe
+ser con la siguiente sintaxis: *:not(p, .boton, .lista)*/
+.articulo-pseudoclases *:not(p) {
+    background-color: burlywood;
+} 
+
+/*Pseudoelementos : para ser aplicados debe de tener el atributo content, de lo contrario no se ejecutara*/
+.heroes-biblia::before {
+    content:"=> ";
+}
+
+.heroes-biblia::after {
+    content:" <=";
+}
+
+.heroes-precio::before {
+    content:"$";
+}
+
+.heroes-precio::after {
+    content:"USD";
+}
+/* first-letter afecta a la primera letra del parrafo*/
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+/* first-line  afecta a la primera linea del parrafo*/
+.p-pseudoelementos::first-line {
+   color: coral;
+}
+/*slection nos permite sombrear con los colores escogidos, secciones del parrafo. Si deseamos que esto se aplique en todo el docuemnto
+la sintaxis seria asi: *selection {*/
+.p-pseudoelementos::selection {
+    color: chartreuse;
+    background-color: black;
+ }
+.input-pseudoelementos::placeholder {
+    color: green;
+}
+
+/*Agrupar selectores*/
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px ;
+}
+
+/*Especificidad*/
+blockquote {
+    background-color: bisque;
+}
+
+#cita-marco {
+    background-color: lightgreen;
+}
+
+.cita-marco {
+background-color: aqua !important;
+}
+
+blockquote.cita-marco {
+    background-color: tomato;
+}
+
+.cita-marco {
+    background-color: cornflowerblue;
+}
+
+/*Herencia*/
+
+.cita-marco {
+    background-color: rgb(228, 216, 46) !important;
+    background-color: rgb(236, 166, 35) !important;
+    font-size: 32px;
+    border-style: dotted;
+    border-color: red;
+}
+
+.cita-marco cite {
+    background-color: pink;
+    background-color: inherit;
+    font-size: 24px;
+    font-size: initial;
+    border-style: inherit;
+    border-color: inherit;
+}

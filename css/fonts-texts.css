@@ -1,0 +1,105 @@
+/*Google Fonts - https://fonts.google.com/ para fuentes e iconos*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+color: crimson;
+}
+
+/*Estilos de Fuentes*/
+.font {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-family: Arial, Helvetica, sans-serif; /*Tipo*/
+ font-size: 32px;/*tamanho*/
+ font-weight: bold;/*grosos*/
+ font-style: italic;/*estilo*/
+ font-variant: small-caps;/*coloca todo el texto en mayuscula*/
+ line-height: 2;/*interlineado*/
+ font: italic small-caps bold 24px/ 1.5 monospace; /*shorthand*/
+}
+
+/*Fuentes Externas personalizadas
+Formato woff o woff2 - Web Open Font Format*/
+@font-face {
+    font-family: "chalet";
+    src: url("../assets/Chalet.woff") format("woff");
+    font-display: swap;
+    /*src: url("../assets/Chalet.woff" format("woff"),
+    url("../assets/Chalet.woff2")format("woff2");*/
+}
+
+.chalet {
+    font-family: "chalet", sans-serif;
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: "pecita";
+    src: url("../assets/Pecita.woff") format("woff");
+    font-display: swap;
+  }
+
+.pecita {
+    font-family: "pecita", cursive;
+    font-size: 2rem;
+}
+
+/*Google Font*/
+.raleway {
+    font-family: "raleway", sans-serif;
+    font-size: 2rem;
+}
+
+/*Tipos de text*/
+.text {
+    font-size: 2rem;
+    text-align: center;
+    text-align: left;
+    text-decoration: overline;
+    text-decoration: none;
+    text-indent: 3rem;
+    text-transform: capitalize;/*uppercase, lowercase, none*/
+    letter-spacing: 0.25rem;
+}
+ .text a {
+     text-decoration: none;
+ }
+
+ .text-overflow {
+     background-color: bisque;
+     border: thin solid black;
+     padding: 1rem;
+     font-size: 2rem;     
+     width: 50%;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
+
+ /*iconos*/
+ .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }

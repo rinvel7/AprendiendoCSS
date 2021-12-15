@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja en CSS</title>
+    <link rel="stylesheet" href="css/box-model.css">
+</head>
+<body>
+ <h3>Temario</h3>
+<ul>
+<li>Modelo de Caja</li>
+<li>Margin & Padding</li>
+<li>Cajas en Linea & Cajas de Bloque</li>
+<li>Propiedad Display</li>
+<li>Propiedad Overflow</li>
+<li>Tamano de Caja</li>
+<li>Propiedad Float & Clear</li>
+<li>Colapso de Margenes Verticales</li>
+<li>Centrado de Caja</li>
+</ul> 
+<h1>MODELOS DE CAJA</h1>
+<h2 id="inicio">Modelo de Caja</h2>
+<p>Es la forma en que CSS ve los elementos de HTML, es decir, en forma de cajas con las siguientes propiedades:</p>
+<ol>
+    <li>Content: el contenido del elemento HTMl, tomando en cuenta sus dimensiones (width & height) </li>
+    <li>Margin: distancias externas</li>
+    <li>border: lo que delimita cada uno de los elementos HTML</li>
+    <li>padding: (relleno) distancias internas (distancia del borde al contenido</li>
+</ol>
+<p>Dentro del modelo de caja hay que considerar 4 lados:</p>
+<ul>
+    <li>Arriba (top)</li>
+    <li>Derecha (right)</li>
+    <li>Abajo (bottom</li>
+    <li>Izquierda (left</li>
+</ul>
+
+<p>
+EJERCICIO:
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Recusandae qui id eius reprehenderit unde magni natus excepturi odio. Id cupiditate 
+in est hic modi assumenda quidem porro praesentium totam quam?
+</p>
+<br>
+
+<hr>
+<h2 id=margin-padding>Margin & Padding</h2>
+<p>Esto aplica para margin y padding </p> 
+<ul>
+<li>1 valor= aplicar alos 4 lados</li>
+<li>2 valor= primer valor es para los ladoas verticales top/bottom
+segundo valor es para los lados horizontales (letf/right)</li>
+<li>3 valor =primer valor es para los top
+segundo valor es para los lados horizontales (letf/right)
+tercer valor es para bootom</li>
+<li>4 valor =  (posicion como las manecillas del reloj)
+primer valor es para los top (12)
+segundo valor es para right (3)
+tercer valor es para bottom (6)
+cuarto valor es para left (9)</li>
+</ul>
+
+<div class="caja-uno"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente odit
+deleniti, fugit ipsum perferendis sequi quos nam cum molestiae delectus hic qui 
+nihil in deserunt, eos tempora excepturi dolorem.</div>
+<div class="caja-dos"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente odit
+deleniti, fugit ipsum perferendis sequi quos nam cum molestiae delectus hic qui 
+nihil in deserunt, eos tempora excepturi dolorem.</div>
+<hr>
+<h2>Cajas en Linea & Cajas de Bloque</h2>
+<br>
+<h4>Cajas en Linea</h4>
+<br>
+<ol type="circle">
+<li>Ocupan el espacio necesario para mostrar su contenido</li>
+<li>No tienen dimesiones modificables (alto, ancho)</li>
+<li>Permiten otros elementos a su lado</li>
+<li>Padding y margin solo empujan a elementos adyacentes en horizontal, UNCA VERTICAL</li>
+</ol>
+<br>
+<h4>Cajas de Bloques</h4>
+<br>
+<ol type="circle">
+<li>Ocupan todo el ancho disponible, lo que genera saltos de linea</li>
+<li>No tienen dimesiones modificables (alto, ancho)</li>
+<li>No Permiten otros elementos a su lado (aunque especifique un ancho, siguen ocupando todo el espacio disponible a lo ancho, generando saltos de linea</li>
+</ol>
+<br>
+<h4>Ejemplo cajas de bloque & cajas de linea</h4>
+<br>
+<span class="caja-linea">Esto es una caja Linea</span>
+<span>Esto es un span</span>
+<div class="caja-bloque">Esto es una caja Bloque</div>
+<hr>
+<br>
+<h2>Propiedad Display (Visualización)</h2>
+<br>
+<p>Establece los tipos de visualización interna y externa de un elemento. Nos permite definir como será mostrado un cierto elemento HTML.</p>
+<br>
+<h4>Propiedades:</h4>
+<ol>
+    <li>inline</li><!--Ejemplo: caja-linea-->
+    <li>block</li><!--Ejemplo: caja-block-->
+    <li>inline-block (se comporta como un elemtento en linea pero acepta modificar sus dimensiones (alto y ancho)</li>
+    <li>none</li><!--No se visuliza el elemneto pero sigue cargando-->
+    <li>table</li>
+    <li>list-item</li>
+    <li>flex</li>
+    <li>grid</li>
+</ol>
+
+<div class="caja-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Aperiam sit dolor aliquid. Officiis non molestiae ex dignissimos animi amet.
+Omnis ex voluptas facilis voluptatibus ipsa temporibus dolores molestiae, 
+atque nostrum.</div>
+<br>
+<span class="caja-inline-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Facere aliquid rerum, corporis provident amet voluptatum harum exercitationem? 
+    Molestiae incidunt dolor blanditiis, exercitationem voluptatem, nisi in necessitatibus, 
+    id fugit omnis esse.</span>
+<br>
+<hr>
+<h2>Propiedad Overflow (Desbordamiento)</h2>
+<p>Define cómo se muestra el contenido desbordado tanto en el eje horizontal como en el vertical.</p>
+<h4>Propiedades:</h4>
+<ol>
+<li>Visible (defaul)</li>
+<li>hidden (Oculto)</li>
+<li>Scroll (barra de desplazamiento vertical</li>
+<li>Auto (el navegador decide si mostrar una barra de desplazamiento o no)</li>
+</ol>
+<p class="overflow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Fugit dignissimos rerum soluta harum obcaecati, dolorem esse minus quas error 
+ipsa quidem, atque quisquam tenetur? Consequuntur dolorem nemo harum dicta iusto?</p>
+<br>
+<hr>
+<h2>Tamano de Caja (Box - sizing)</h2>
+<p>Define cómo se calcula el ancho y alto del elemento: 
+si incluyen el relleno y los bordes o no.</p>
+
+<br>
+<div class="box-sizing-content">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aliquam iure consequuntur incidunt facere vero accusamus, consequatur 
+repudiandae aliquid laudantium impedit voluptatum libero, repellat a eaque? 
+Similique rem itaque quis voluptatibus?</p>
+</div>
+<div class="box-sizing-border">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Aliquam iure consequuntur incidunt facere vero accusamus, consequatur 
+repudiandae aliquid laudantium impedit voluptatum libero, repellat a eaque? 
+Similique rem itaque quis voluptatibus?</p>
+</div>
+<article class="container-col-3">
+   <section class="item">Seccion 1</section>
+   <section class="item">Seccion 2</section>
+   <section class="item">Seccion 3</section>
+</article>
+<br>
+<hr>
+<!--Es una mala practica-->
+<h2>Propiedad Float (flotar) & Clear (limpiar)</h2>
+<p>Empuja el elemento hacia el lado izquierdo o derecho (Hoy dia, se considera una mala practica utiliza)</p>
+<br>
+<article class=" conteiner-floats">
+<section class="float-right">Este elemento flota a la derecha</section>
+<section class="float-left">Este elemento flota a la izquierda</section>
+</article>
+<article>
+<div class="clearfix"></div> <!--Se soloca una div en blanco con la intecion de que los elementos flotantes tomen posicion y no pierdan su propiedad-->
+<section>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Ipsa, molestias totam! Voluptatum enim dolorem sed. Beatae itaque nostrum rem 
+distinctio id optio non, voluptas laboriosam libero, odit quod sequi nobis.
+</section>
+</article>
+<br>
+<hr>
+
+<h2>Colapso de Margenes Verticales</h2>
+<p>Los margenes de los elementos seran aclopados, interpuestos, es decir, no se sumara el margen de arriba (Top) con el de abajo (botton). Solo se debe utilizar un selector (top o botton)</p>
+<article class="margin-collapse">
+<section>Section1</section>
+<section>Section2</section>
+<h3>Margenes Horizontales: no se colapsan, es decir no se interponen uno sobre otro, sino que se suman</h3>
+<section><span>Span1</span><span>Span2</span><span>Span3</span></section>
+</article>
+<br>
+<hr>
+<h2>Centrado de Caja</h2>
+<article class="sitio-web">
+<header> Cabecera</header>
+<main>Contenido Principal</main>
+<footer>pie de pagina</footer>
+</article>
+
+<a href="index.html#inicio">👆 Inicio</a>
+<hr>
+</body>
+</html>

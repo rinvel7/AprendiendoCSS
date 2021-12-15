@@ -1,0 +1,173 @@
+* {margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: 400px;
+    height: 200px; 
+    /*propiedades de tipo shorthand: porque cada una de los selectores, tienen lados: arriba, abajo, derecha e isquierda*/
+    border-color: green;
+    border-top-color: red ;
+    border-width: medium; /*thin: 1px, madium: 3px, thick - 5px*/
+    border-style: solid;
+    border: 2px dashed blue;
+ 
+}
+
+h2 {
+    color: fuchsia;
+}
+
+.caja-uno,
+.caja-dos {
+    background-color: chocolate;
+    border: medium solid orange;
+/*Padding & Margin*/
+    padding: 10px;
+    margin: 20px;
+    padding: 20px 40px;
+    margin: 40px 20px;
+    padding: 0 40px 20px;
+    margin: 50px 30px 0;
+    padding: 0 40px 20px 50px;
+    margin: 100px 50px 30px 0;
+}
+
+.caja-linea,
+.caja-bloque {
+    background-color: aqua;
+    width: 500px;
+    height: 250px;
+    border: medium solid black;
+    padding: 16px;
+}
+
+.caja-bloque {
+    margin: 32px;
+    display: block;/*por naturaleza esta caja, tiene esa propiedad*/
+}
+
+.caja-linea {
+    margin: 48px;
+    display: inline;/*por naturaleza esta caja, tiene esa propiedad*/
+
+}
+
+/*Propiedades Display*/
+.caja-none,
+.caja-inline-block,
+.caja-hidden {
+
+    background-color: olive;
+    color: aliceblue;
+    width: 600px;
+    height: 300px;
+    border: medium solid black;
+}
+
+.caja-inline-block {
+    display: inline-block;
+}
+
+/*Propiedad Overflow*/
+.overflow {
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
+
+/*Tamano de Caja*/
+
+.box-sizing-content,
+.box-sizing-border {
+    background-color: aqua;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+    /* w 500 + 10 + 10 +5 + 5 = 530*/
+    /* h 250 + 10 +10 + 5 +5 = 280*/
+}
+
+.box-sizing-border {
+    box-sizing: border-box;
+}
+
+.container-col-3 {
+    background-color: bisque;
+    width: 600px;
+    height: 300px;
+    margin-top: 20 px;
+}
+
+.container-col-3 >* {
+    box-sizing: border-box;
+    width: 200px;
+    border:thin solid red ;
+    float: left;
+    
+}
+
+/*Reseteo Paul Irish: permite dar el valor de border-box a toda la etiqueta html y por herenci las demas propiedades
+lo que significa que todas las cajas del documento no empiecen desde el contenido sino desde el border (debe dar al inicio de la hoja.)
+
+html {
+    box-sizing: border=box;
+}
+
+*,
+*:before,
+*after {
+    box-sizing: inherit;
+
+}*/
+
+/*Float & Clear*/
+.conteiner-floats {
+    background-color: cadetblue;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*Colapso de Margenes Verticales*/
+.margin-collapse {
+    background-color: cornflowerblue;
+}
+
+.margin-collapse section {
+     border: thin solid black;
+     margin-top: 16px; 
+     margin-bottom: 16px; /*los margenes seran interpuestos*/    
+}
+
+.margin-collapse span {
+    border: thin solid black;
+    display: inline-block;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+/*Centrado de Caja*/
+.sitio-web {
+    border: thin solid black;
+    background-color: beige;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    margin-left: auto; /*para centrar una caja es darle al margin la propiedad auto*/
+    margin-right: auto;/*para centrar una caja es darle al margin la propiedad auto*/
+}

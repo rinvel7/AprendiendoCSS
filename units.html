@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida en Css</title>
+    <link rel="stylesheet" href="css/units.css">
+</head>
+<body>
+<h1>Unidades de Medida en CSS</h1>
+<dl>
+<dt><strong>Clasificacion:</strong></dt>
+<dt><strong>Absolutas:</strong> su valor no cambia, son unidades del mundo real</dt>
+<dd>pc, cm, mm, in, Q</dd>
+<dd>pt (1/72in</dd>
+<dd>px (1/96in</dd>
+<dt><strong>Relativas:</strong> su valor es relativo a un contexto</dt>
+<dd>em, rem, ex, ch - al tamano de la fuente (letra)</dd>
+<dd>em - basada en la anchura de la "m" de la fuente del elemento </dd>
+<dd>rem - basada en la anchra de la "m" de la fuente del elemento rais (html)</dd>
+<dd>ex - basada en la altura de la "x" de la fuente del elemento</dd>
+<dd>ch - basada en la anchura del "0" de la fuente del elemento</dd>
+<dd>% - al tamano del contenedor</dd>
+<dd>vw, vh, vmax - al tamano del viewport</dd>
+<dd>vw - ancho del viewport van de 1 a 100</dd>
+<dd>vh - alto del viewport van de 1 a 100</dd>
+<dd>vmax - entre vw y vh toma el que tenga mayor valor</dd>
+<dd>vmin - entre vw y vh toma el que tenga menor valor</dd>
+<hr>
+<h2>Unidad Absoluta: Pixeles</h2>
+<div class="pixels">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum nisi suscipit sint accusantium dolore fuga labore enim, commodi facilis officiis vero ullam ratione magnam officia reiciendis non qui voluptates.
+</div>
+<hr>
+<h2>Unidades Relativas (al tamano de la fuente (letra))</h2>
+<h3>Ems</h3>
+<div class="ems">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum nisi suscipit sint accusantium dolore fuga labore enim, commodi facilis officiis vero ullam ratione magnam officia reiciendis non qui voluptates.
+<section class="em-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta voluptas reiciendis perspiciatis provident quam. Quae minima eum ducimus inventore nam sapiente sequi at eaque illo repudiandae! Repellendus, nulla non.</div>
+</section>
+<hr>
+<h3>Rems (Root em)</h3>
+<div class="rems">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum nisi suscipit sint accusantium dolore fuga labore enim, commodi facilis officiis vero ullam ratione magnam officia reiciendis non qui voluptates.
+<section class="rem-child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta voluptas reiciendis perspiciatis provident quam. Quae minima eum ducimus inventore nam sapiente sequi at eaque illo repudiandae! Repellendus, nulla non.</div>
+</section>
+<hr>
+<h3>Porcentages (%)</h3>
+<div class="porcentages"> Caja de Bloque</div>
+<div class="height-parent">
+<section class="height-child">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit amet facere suscipit cumque fugiat officiis hic aliquam ut quia, cum incidunt rerum explicabo dolores dolorem veritatis porro ipsum harum nulla.
+</section>
+</div>
+<!--<span class="porcentages">Caja de linea</span>-->
+<hr>
+<h3>viewport Units</h3>
+<div class="viewport"> 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam doloribus facere aut veritatis illum? Molestiae maxime illum voluptates consequatur sunt eius dolorem earum veritatis, blanditiis officiis. Tenetur, aspernatur saepe.
+</div>
+<section>
+<div class="viewport"> 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam doloribus facere aut veritatis illum? Molestiae maxime illum voluptates consequatur sunt eius dolorem earum veritatis, blanditiis officiis. Tenetur, aspernatur saepe.
+</div>
+</section>
+<div class="vmax"> 
+Caja vmax
+</div>
+<div class="vmin"> 
+Caja vmin
+</div>
+
+<a href="index.html#inicio">👆 Inicio</a>
+<hr>
+</body>
+</html>

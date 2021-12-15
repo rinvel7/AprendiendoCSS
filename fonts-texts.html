@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts & Text</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/fonts-texts.css">
+
+</head>
+<body>
+  <h1>Estilos de Fuentes y Textos</h1>  
+  <h2>Estilos de Fuentes</h2>
+  <ul>
+     <li>font-family</li>
+     <li>font-size</li>
+     <li>font-weight</li>
+     <li>font-style</li>
+     <li>font-variant</li>
+     <li>font</li>
+  </ul>
+
+<h2>Estilos de Fuentes Tipograficas Externas</h2>
+<p class="font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae illo ipsa earum architecto reiciendis assumenda! Earum inventore tempore, sequi dolor nam tenetur dolore odit fugiat laborum vel? Voluptatum, quidem mollitia!
+</p>
+<h2>Estilos de Fuentes Tipograficas Externas Personalizadas</h2>
+<p class="chalet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quos nesciunt exercitationem saepe corrupti suscipit, dolore nostrum fugit. Maxime molestias animi voluptatem nostrum aliquam. Nobis ullam voluptates similique provident perspiciatis!</p>
+<p class="pecita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure explicabo tenetur asperiores magni alias sit id, similique quibusdam? A architecto debitis porro ipsa, quibusdam vel ducimus consequatur placeat rem.</p>  
+<br>
+<hr>
+<dl>
+<dt><strong>Font Display</strong></dt>
+<br>
+<dt><strong>auto</strong></dt>
+<dd>permite que el navegador utilice el metodo predeterminado que suele ser block</dd>
+<dt><strong>block</strong></dt>
+<dd>oculta brevemente el texto hasta que la fuente haya sido descargada por completo</dd>
+<dt><strong>swap</strong></dt>
+<dd>indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo</dd>
+<dt><strong>fallback</strong></dt>
+<dd>es una mescla de auto y swap</dd>
+<dt><strong>optional</strong></dt>
+<dd>ocultara el texto, luego lo cargara con la fuente alternativa y finalmente aplicara la fuente personalizada</dd>
+</dl>
+<h3>Estilos de Fuentes Tipograficas Externas Google Font</h3>
+ <p class="raleway">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eveniet eos et culpa eum voluptatibus veniam, quae sit dolore quam aliquam veritatis obcaecati aperiam cupiditate voluptas aspernatur. Ab, debitis asperiores!</p> 
+<hr>
+<h3>Tipos de Textos</h3>
+<ol>
+  <li><strong>text-align:</strong>  alinea el texto: derecha, izquierda, centrado, justificado.</li>
+  <li><strong>text-decoration:</strong>  coloca estilo al texto: con linea, o sin linea.</li>
+  <li><strong>text-indent:</strong>  coloca un espaciado o sangria al inicio del parrafo</li>
+  <li><strong>text-overflow:</strong>  oculta el texto, mas deben estar junto a 2 propiedades mas para que se ejecute: hidden y whitw-apace</li>
+  <li><strong>text-transform:</strong>  Define cómo se debe transformar el contenido del texto: primera letra mayuscula de cada palabra, todo en mayuscula, todo en minuscula.</li>
+  <li><strong>letter-spacing:</strong> Espaciado entre caracteres. </li>
+</ol>
+<h4>Aplicacion de Tipos de Texto</h4>
+<p class="text">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci beatae eos dolore nisi, aliquam dolorem dicta eaque ut tempora. Excepturi, temporibus a accusantium voluptate sunt distinctio provident. Illo, facilis.
+<a href="">Enlace</a>
+</p>
+<h4>Texto Overflow</h4>
+<p class="text-overflow">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci beatae eos dolore nisi, aliquam dolorem dicta eaque ut tempora. Excepturi, temporibus a accusantium voluptate sunt distinctio provident. Illo, facilis.
+</p>
+<hr>
+<h2>Tipografia de Iconos</h2>
+<h3>Google Font</h3>
+<p>Para Implementar un iccono de google font se debe seguir varios pasos: <br> - ir al area de iconos de google font, <br> - copiar el codigo html y copiarlo en la hoja, <br> - ir a la guia de implementar el icono de google font, <br> - copiar el codigo de marterial-icons y pegarla en la hoja de stylo de css, <br> - copiar el link y pegarlo en la cabecera de la hoja, <br> - agregar material-icons a la class del codigo html (span), <br> - por cada nuevo icono, colocar a la class material-icons al span y luego el nombre del icono que se requiera  </p>
+<span class="material-icons">
+  thumb_up
+</span>
+<span class="material-icons">
+  favorite
+</span>
+<span class="material-icons">
+face
+</span>
+<span class="material-icons">
+language
+</span> 
+<span class="material-icons">
+schedule
+</span>
+<span class="material-icons">
+setting
+</span>
+<h3>Bootstrap Icons</h3>
+<i class="bi bi-emoji-laughing"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill" viewBox="0 0 16 16">
+  <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+</svg>
+<i class="bi bi-emoji-wink-fill"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-wink-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM7 6.5C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zM4.285 9.567a.5.5 0 0 0-.183.683A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75.5.5 0 0 0-.683-.183zm5.152-3.31a.5.5 0 0 0-.874.486c.33.595.958 1.007 1.687 1.007.73 0 1.356-.412 1.687-1.007a.5.5 0 0 0-.874-.486.934.934 0 0 1-.813.493.934.934 0 0 1-.813-.493z"/>
+</svg>
+<hr>
+<a href="index.html#inicio">👆 Inicio</a>
+<hr>
+</body>
+</html>

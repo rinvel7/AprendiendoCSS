@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit; /*reseteo: Permite que las cajas no tengan margin y paddind por defecto, se recomienda que al iniciar el projecto tenga este reseteo*/
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+
+
+/*conversiones entre unidades - http://pxtoem.com/*/
+
+/*Unidad Absoluta:
+Pixeles*/
+.pixels {
+    background-color: blueviolet;
+    color: black;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    font-size: 24px;
+    border: 5px solid darkturquoise;
+}
+
+/*Unidad Relativa
+Ems*/
+.ems { /*1em equivale a 16px*/ 
+    background-color: blueviolet;
+    font-size: 24px; /*Elemento padre*/
+    padding: 1em 0.5em;
+    border: 5px solid darkturquoise;
+}
+
+.em-child { /*Un elemento Hijo equivale el doble de su padre*/
+    background-color: darksalmon;
+    border: thick solid beige;
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 2em; /*la letra seria aun mayor que el elemento padre mas cercano.*/
+}
+
+/*rem*/
+.rems { /*1rem equivale a elemento html 16px*/ 
+    background-color: blueviolet;
+    font-size: 24px; 
+    padding: 1rem 0.5rem;
+    border: 5px solid darkturquoise;
+}
+
+.rem-child { 
+    background-color: darksalmon;
+    border: thick solid beige;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem; /*la letra seria aun mayor que el elemento html (16px por defecto) */
+}
+
+/*porcentajes*/
+.porcentages {
+    background-color: chocolate;
+    width: 80%;
+    padding: 5%;
+    margin: 20% 10%;
+    width: 80%;
+    font-size: 100%;
+    height: 100%;
+}
+
+.height-parent {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+
+.height-child {
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+}
+
+/*viewport*/
+.viewport {
+    background-color: darkcyan;
+    width: 50vw;
+    /* Recuerda que la etiqueta body tiene margenes por defecto y que la barras de scroll del navegador tambien forman parte del viewport*/
+    width: 100%;
+    width: 100vw;
+    height: 50vh;
+    height: 100vh;
+    font-size: 5vw; /*Una forma de ser las letras responsive*/
+    padding: 2vh 2vw;
+}
+
+.vmin,
+.vmax {
+    background-color: darksalmon;
+    border: thick solid aquamarine;
+    width: 50vmax;
+    height: 50vmin;
+}

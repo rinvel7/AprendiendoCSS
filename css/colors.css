@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Colores por Nombres
+Referencia: Colores en CSS- https://htmlcolorcodes.com/es/*/
+.color-by-name {
+    background-color: blanchedalmond;
+    color: blueviolet;
+    border: thick solid greenyellow ;
+}
+
+/*Colores por codigo Hex* con colores de 6 digitos #ff6600*/
+
+.color-hex {
+    background-color: #ff6600;
+    background-color: #f60; /*codigo sinplificado, siempre q tengan de dos en dos la misma letra o numero*/
+    background-color: #ff6605;
+    color: #12ac78;
+    border: thick solid #ffffff;
+    border: thick solid #ff0000;
+    border: thick solid #00ff00;
+    border: thick solid #0000ff;
+    border: thick solid #000000;  
+}
+
+/*Sistema RGB*/
+.color-rgb {
+    background-color: rgb(255,255,255);
+    background-color: rgb(255,0,0);
+    background-color: rgb(0,255,0);
+    background-color: rgb(0,0,255);
+    background-color: rgb(0,0,0);
+    color:rgb(228, 191, 69);
+    border: thick solid rgb(193, 241, 121) ;
+}
+
+/*Valores tranparentes & CurrentColor*/
+.color-transparent-current {
+    background-color: blueviolet;
+    background-color: currentColor;
+    background-color: transparent;
+    color: olive;
+    border: thick solid currentColor;
+}
+/*Propiedad opacity*/
+.opacity {
+    background-color: orchid;
+    color: blue;
+    border: thick solid black;
+    opacity: 0.5; 
+}
+

@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: blue;
+}
+
+/*Posicionamiento Static: es el valor predeterminado... por defecto.*/
+.static {
+    background-color: yellow;
+    top: 10px; /*No hacen efecto en la caja , pues no son tomados en cuenta por la propiedad Static.*/
+    left: 10px;
+}
+
+/*Posicionamiento Relative*/
+.relative {
+    background-color: aqua;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    /*top: 50px;
+    left: 50px;*/
+    bottom: 50px; /*botton y right son ignorados por el navegador, cuando top y letf estan presentes*/
+    right: 50px;
+    top: -30px;
+    left: -10px;
+    top: 50px;
+    left:50px;
+}
+
+/*Posicionamiento Adsolute*/
+.adsolute {
+    background-color:  tomato;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    /*top:0;
+    left: 0;*/
+    /*top: 100px;
+    left: 100px;*/
+    right: 0;
+    bottom: 0;
+}
+
+.relative-parent {
+    background-color: bisque;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+}
+.adsolute-child {
+    background-color: brown;
+    position: absolute;
+    /*left: 0px;
+    top: 0px;
+    bottom: 0;
+    right: 0;*/
+    top: -50px;
+    left: -30px;
+}
+
+/*Posicionamiento fixed*/
+.fixed {
+    background-color: chartreuse;
+    position: fixed;  
+    width: 300px;
+    height: 100px;
+   /* right: 20px;
+    bottom: 10px;*/
+    top: 30px;
+    left: 400px;
+}
+
+/*Posicionamiento Sticky*/
+.sticky {
+    background-color: rgb(92, 169, 241);
+    position: sticky;
+    top: 50px;
+}
+
+.sticky-parent {
+    border: medium dashed blue;
+    height: 600px;
+
+}
+
+.sticky-child {
+    background-color: rgb(129, 119, 119);
+    position: sticky;
+    top: 75px;
+}
+
+/*z-index*/
+.z-index-1,
+.z-index-2 {
+    background-color: aquamarine;
+    border: thin solid black;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.z-index-1 {
+    z-index: 1;
+    z-index: 0;
+   
+
+}
+
+.z-index-2 {
+    top: -200px;
+    left: 100px;
+    z-index: 2;
+    z-index: -1;
+}
+
+.z-index-parent {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+}
+
+.z-index-child {
+    background-color: rgb(194, 124, 230);
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 75px;
+    z-index: -3; /*el z-index debe ser un valor (-) siempre.*/
+}

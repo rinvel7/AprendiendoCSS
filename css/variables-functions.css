@@ -1,0 +1,66 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root { /*por especificidad el root, prevalece  ante que la cascada*/
+ color:darkgreen;
+ --default-bg-color: skyblue; /*esta variable afectara todos lo elementos html*/
+}
+
+html {
+    color: red;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit; /*reseteo: Permite que las cajas no tengan margin y paddind por defecto, se recomienda que al iniciar el projecto tenga este reseteo*/
+}
+
+/*var*/
+.custom-props-1 {
+ --primary-color: gray; /*esta variable afectara solo el elemento donde se esta declarando el selecto*/
+ --font-size: 32px;
+ background-color: var(--primary-color); 
+}
+
+.custom-props-2 {
+ background-color: var(--default-bg-color);
+ border: thin solid var(--border-color); /*esta variable fue declarada en el style en linea del html*/
+ padding: 1rem;
+}
+
+.custom-props-3 {
+ font-size: var(--font-size);
+ border: thin solid var(--border-color);
+}
+
+.title-props {
+ --primary-color: blue;
+ color: var(--primary-color, orange);
+ background-color: var(--default-bg-color);
+}
+
+/*calc*/
+.ch-10 {
+    --padding-size: 3ch;
+    --num-ch: 10ch;
+    background-color: var(--default-bg-color);
+    font-size: 2rem;
+    padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size) * 2);
+}
+
+/*min-max*/
+.min-max {
+    background-color: var(--default-bg-color);
+    margin-top: 1rem ;
+    width: min(300px, 20vw, 20rem);
+    height: max(200px,25vh);
+}
+
+/*clamp*/
+h1 {
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
